@@ -1,0 +1,22 @@
+{
+  "name": "angnodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "make-seed": "knex seed:make dev --knexfile ./knex/knexfile.js",
+    "migrate": "knex migrate:latest --knexfile ./knex/knexfile.js",
+    "seed": "knex seed:run --knexfile ./knex/knexfile.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "knex": "^0.95.11",
+    "pg": "^8.7.1"
+  }
+}
